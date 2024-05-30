@@ -1,8 +1,8 @@
-% Load the audio file
+% Load the audio file.
 filename = 'your_audio_file.wav'; % Replace 'your_audio_file.wav' with the path to your audio file
 [y, Fs] = audioread(filename);
 
-% Double the playback speed
+% Double the playback speed.
 new_y = resample(y, 2, 1);
 
 % Play the original audio
